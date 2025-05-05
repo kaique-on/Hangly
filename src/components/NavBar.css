@@ -1,0 +1,61 @@
+.navbar {
+    background-color: #4997d0;
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.logo p {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+}
+
+.botoes-entrar {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+}
+
+.btn-login {
+    text-decoration: none;
+    color: black;
+    padding: 8px 32px;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-cadastro {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.navbar .titulo-pag {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: white;
+  }

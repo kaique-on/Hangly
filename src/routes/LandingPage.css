@@ -1,0 +1,28 @@
+.landing-page {
+    background-image: url('../assets/fundo-landing.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+.landing-body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+
+}
+
+.landing-body h1 {
+    color: var(--azul-principal)
+}
+
+.landing-body h4 {
+    font-weight: 600;
+    color: var(--branco-suave);
+
+}

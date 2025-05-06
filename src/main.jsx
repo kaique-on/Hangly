@@ -6,8 +6,10 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import LandingPage from "./routes/LandingPage.jsx"
-import Login from "./routes/LoginPage.jsx"
-import ErrorPage from './routes/ErrorPage.jsx';
+import LoginPage from "./routes/LoginPage.jsx"
+import CadastroPage from "./routes/CadastroPage.jsx"
+import ErrorPage from "./routes/ErrorPage.jsx";
+import HomePage from "./routes/HomePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,13 +27,16 @@ const router = createBrowserRouter([
 
   {
       path: "/login",
-      element: <Login />,
+      element: <LoginPage />,
   },
-
-  /* {
-    path: "/login",
-    element: <Cadastro />,
-}, */
+  {
+    path: "/cadastro",
+    element: <CadastroPage />,
+  },
+  {
+    path: "/home",
+    element: <HomePage />,
+  },
   
 ]);
 

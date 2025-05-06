@@ -1,0 +1,30 @@
+.home-body {
+    padding-top: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisa {
+    display: flex;
+    padding: 64px;
+    gap: 24px;
+    width: 100vw;
+}
+
+.pesquisa input {
+    width: 100%;
+    box-sizing: border-box;    
+}
+
+.pesquisa input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--cor-secundaria) inset;
+}
+
+.pesquisa img {
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 100px;
+    background-color: var(--cor-principal);
+}

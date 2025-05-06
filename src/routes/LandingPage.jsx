@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import { useParams, useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage = () => {

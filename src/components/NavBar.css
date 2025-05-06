@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #4997d0;
-    padding: 16px 48px;
+    background-color: var(--cor-principal);
+    padding: 16px 56px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -16,14 +16,14 @@
 }
 
 .logo img {
-    height: 60px;
-    width: 60px;
+    height: 56px;
+    width: 56px;
 }
 
 .logo p {
     font-family: 'Quicksand';
     font-weight: 700;
-    color: white;
+    color: var(--branco-suave);
     font-size: 32px;
 }
 
@@ -36,17 +36,17 @@
 
 .btn-login {
     text-decoration: none;
-    color: black;
+    color: var(--branco-suave);
     padding: 8px 32px;
     border-radius: 12px;
-    background-color: white;
+    background-color: var(--cor-secundaria);
     font-size: 20px;
     font-weight: 600;
 }
 
 .btn-cadastro {
     text-decoration: none;
-    color: white;
+    color: var(--branco-suave);
     font-size: 20px;
     font-weight: 600;
 }
@@ -57,5 +57,38 @@
     left: 50%;
     transform: translateX(-50%);
     font-weight: bold;
-    color: white;
+    color: var(--branco-suave);
   }
+
+  .home-pag {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    font-size: 24px;
+    color: var(--branco-suave);
+  }
+
+  .home-pag p {
+    font-weight: 700;
+  }
+
+.home-pag img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.perfil img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+}
+
+
+
+.perfil {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

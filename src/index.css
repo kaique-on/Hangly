@@ -4,16 +4,29 @@
   font-family: 'Almarai';
   letter-spacing: 0.3px;
   box-sizing: border-box;
+  color: var(--branco-suave);
+}
 
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--cor-secundaria) inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--branco-suave) !important;
 }
 
 body, html {
   overflow-x: hidden;
+  background-color: var(--cor-secundaria);
 }
 
 :root {
-  --azul-principal: #4997d0;
-  --branco-suave: #f5f5f5;
+  --cor-principal: #e713a3;
+  --cor-secundaria: #490665;
+  --branco-suave: #FAFAFA;
+  --branco-opaco: #fafafa80;
   --texto-escuro: #333;
 }
 

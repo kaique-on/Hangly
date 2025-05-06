@@ -2,7 +2,9 @@ import {Link} from 'react-router-dom';
 import React from 'react';
 import Logo from '../assets/Hangly Logo White.svg';
 import './NavBar.css';
-import LandingPage from '../routes/LandingPage';
+import SemFoto from '../assets/sem-foto.jpg'
+import Logout from '../assets/logout.svg'
+import Configuracoes from '../assets/configuracoes.svg'
 
 const NavBar = ({pagina}) => {
   return (
@@ -20,8 +22,7 @@ const NavBar = ({pagina}) => {
         )}
 
         {(pagina === 'login' && 
-            <h3 className='titulo-pag'>
-            Login
+            <h3 className='titulo-pag'>Login
         </h3>
         )}
 
@@ -29,6 +30,17 @@ const NavBar = ({pagina}) => {
             <h3 className='titulo-pag'>
             Cadastro
         </h3>
+        )}
+
+        {(pagina === 'home' && 
+            <div className='home-pag'>
+                <div className='perfil'>
+                    <img src={SemFoto} />
+                    <p>Kaique</p>
+                </div>
+                <img src={Configuracoes} />
+                <img src={Logout} />
+            </div>
         )}
     </nav>
   )

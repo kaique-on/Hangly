@@ -35,8 +35,9 @@ const NavBar = ({pagina}) => {
         {(pagina === 'home' && 
             <div className='home-pag'>
                 <div className='perfil'>
+                <p>Kaique</p>
                     <img src={SemFoto} />
-                    <p>Kaique</p>
+                    
                 </div>
                 <img src={Configuracoes} />
                 <img src={Logout} />

@@ -1,0 +1,50 @@
+.event-body {
+    padding-top: 88px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-img {
+    height: 160px;
+    width: 100%;
+    background-image: url('../assets/rave-noturna.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.event-title-edit {
+    padding: 16px 64px 32px 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-btns {
+    display: flex;
+    gap: 16px;
+}
+
+.edit-btns button {
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    align-items: center;
+    margin: 0;
+    padding: 12px;
+    background-color: var(--cor-principal);
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.edit-btns img {
+    width: 32px;
+    height: 32px;
+}
+
+button:focus {
+    outline:invert;
+}

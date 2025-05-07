@@ -10,6 +10,7 @@ import LoginPage from "./routes/LoginPage.jsx"
 import CadastroPage from "./routes/CadastroPage.jsx"
 import ErrorPage from "./routes/ErrorPage.jsx";
 import HomePage from "./routes/HomePage.jsx";
+import EventPage from "./routes/EventPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <HomePage />,
+  },
+  {
+    path: "/event",
+    element: <EventPage />,
   },
   
 ]);

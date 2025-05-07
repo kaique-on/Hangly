@@ -1,20 +1,42 @@
 .home-body {
-    padding-top: 132px;
+    padding-top: 146px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 .pesquisa {
     display: flex;
-    padding: 64px;
-    gap: 24px;
-    width: 100vw;
+    padding: 0px 128px;
+    gap: 16px;
+    width: 100%;
 }
 
 .pesquisa input {
     width: 100%;
-    box-sizing: border-box;    
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--cor-principal);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 16px;
+    background-color: transparent;
+    color:var(--branco-suave);
+    box-sizing: border-box;  
+}
+
+.pesquisa input::placeholder {
+    color: var(--branco-opaco);
+    font-weight: 500;
+}
+
+.pesquisa input:focus {
+    outline: none;
+    border: 2px solid var(--cor-principal);
+    padding: 7px 15px;
+    background-color: transparent;
+    color:var(--branco-suave);
 }
 
 .pesquisa input:-webkit-autofill {
@@ -22,9 +44,94 @@
 }
 
 .pesquisa img {
-    width: 32px;
-    height: 32px;
-    padding: 12px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
     border-radius: 100px;
     background-color: var(--cor-principal);
+    cursor: pointer;
+}
+
+.categorias {
+    display: flex;
+    padding: 24px 128px;
+    gap: 12px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-categoria{
+    background-color: transparent;
+    border: 1px solid var(--cor-principal);
+    border-radius: 8px;
+    color: var(--branco-suave);
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cat-selecionada {
+    background-color: var(--cor-principal);
+    color: var(--branco-suave);
+}
+
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 32px 128px;
+    justify-content: space-between;
+    row-gap: 56px;
+}
+
+.evento-card {
+    width: 320px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.e-card1 {
+    background-image: url('../assets/rave-noturna.avif'); 
+}
+
+.e-card2 {
+    background-image: url('../assets/avengers-secret-wars.png');
+}
+.e-card3 {
+    background-image: url('../assets/lupe-de-lupe.jpg');
+}
+.e-card4 {
+    background-image: url('../assets/ibirapuera.jpg');
+}
+.e-card5 {
+    background-image: url('../assets/exposicao-van-gogh.jpg');
+}
+.e-card6 {
+    background-image: url('../assets/karaoke.jpg');
+}
+
+.evento-faixa {
+    height: 48px;
+    width: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    opacity: 80%;
+    color: white;
+    padding: 0px 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
 }

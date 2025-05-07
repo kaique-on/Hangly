@@ -36,10 +36,7 @@
 
 .form-auth input::placeholder {
     color:var(--branco-opaco);
-    
 }
-
-  
 
 .form-auth input:focus {
     outline: none;

@@ -6,6 +6,7 @@
     width: 100%;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
 }
 
 .logo {
@@ -64,7 +65,7 @@
     display: flex;
     gap: 24px;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--branco-suave);
   }
 
@@ -84,10 +85,8 @@
     border-radius: 100px;
 }
 
-
-
 .perfil {
-    gap: 12px;
+    gap: 8px;
     display: flex;
     align-items: center;
     cursor: pointer;

@@ -1,5 +1,6 @@
 .event-body {
     padding-top: 88px;
+    padding-bottom: 64px;
     width: 100vw;
     align-items: center;
     display: flex;
@@ -16,10 +17,18 @@
 }
 
 .event-title-edit {
-    padding: 16px 64px 32px 64px;
+    padding: 32px 128px 32px 128px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.event-title {
+    color: var(--cor-principal);
 }
 
 .edit-btns {
@@ -38,6 +47,8 @@
     background-color: var(--cor-principal);
     border-radius: 100px;
     box-sizing: border-box;
+    height: min-content;
+    cursor: pointer;
 }
 
 .edit-btns img {
@@ -47,4 +58,59 @@
 
 button:focus {
     outline:invert;
+}
+
+.event-description {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0px 128px;
+    width: 100%;
+}
+
+.endereco {
+    color: var(--cor-principal);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 64px 0px 32px 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.interesse {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color: var(--cor-principal) !important;
+    gap: 12px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.interesse input {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--cor-principal);
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+.interesse input:checked {
+    background-color: var(--cor-principal);
+}
+
+.interesse input:checked::before {
+    content: "✔";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
 }

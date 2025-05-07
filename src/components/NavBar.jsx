@@ -9,10 +9,11 @@ import Configuracoes from '../assets/configuracoes.svg'
 const NavBar = ({pagina}) => {
   return (
     <nav className={`navbar ${pagina}`}>
-        <Link to={"/"} className='logo'>
-            <img  src={Logo} alt=""/>
-            <p>Hangly</p>
-        </Link>
+        <Link to={pagina === 'home' ? "/home" : "/"} className='logo'>
+  <img src={Logo} alt=""/>
+  <p>Hangly</p>
+</Link>
+
         
         {(pagina === 'landing' && 
             <div className='botoes-entrar'>
@@ -33,14 +34,14 @@ const NavBar = ({pagina}) => {
         )}
 
         {(pagina === 'home' && 
-            <div className='home-pag'>
-                <div className='perfil'>
+            <div className='home-pag' >
+                <Link className='profile' to={"/profile"}>
                 <p>Kaique</p>
                     <img src={SemFoto} />
                     
-                </div>
+                </Link>
                 <img src={Configuracoes} />
-                <img src={Logout} />
+                <Link className='logout' to={"/"}><img src={Logout} /></Link>
             </div>
         )}
     </nav>

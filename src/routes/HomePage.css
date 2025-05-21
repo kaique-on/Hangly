@@ -55,7 +55,7 @@
 .categorias {
     display: flex;
     padding: 24px 128px;
-    gap: 12px;
+    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;

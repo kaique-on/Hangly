@@ -84,8 +84,8 @@
 }
 
 .profile img {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 100px;
 }
 
@@ -96,6 +96,25 @@
     align-items: center;
     cursor: pointer;
     color: var(--branco-suave);
+    font-size: 16px;
+}
+
+.create {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: var(--branco-suave);
+    font-size: 16px;
+    background-color: var(--cor-secundaria);
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 12px;
+    gap: 8px;
+}
+
+.create img {
+    width: 20px;
+    height: 20px;
 }
 
 .logout {

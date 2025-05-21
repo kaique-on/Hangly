@@ -12,6 +12,7 @@ import ErrorPage from "./routes/ErrorPage.jsx";
 import HomePage from "./routes/HomePage.jsx";
 import EventPage from "./routes/EventPage.jsx";
 import ProfilePage from "./routes/ProfilePage.jsx";
+import CreateEventPage from './routes/CreateEventPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       element: <LoginPage />,
   },
   {
-    path: "/cadastro",
+    path: "/signin",
     element: <CadastroPage />,
   },
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/event",
     element: <EventPage />,
+  },
+  {
+    path: "/create",
+    element: <CreateEventPage />,
   },
   {
     path: "/profile",

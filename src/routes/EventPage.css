@@ -1,6 +1,6 @@
 .event-body {
     padding-top: 88px;
-    padding-bottom: 64px;
+    padding-bottom: 16px;
     width: 100vw;
     align-items: center;
     display: flex;
@@ -14,6 +14,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.banner-img-none {
+    height: 160px;
+    width: 100%;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.banner-img-none img {
+    width: 40px;
+    height: 40px;
 }
 
 .event-title-edit {
@@ -31,9 +46,50 @@ ul {
     color: var(--cor-principal);
 }
 
+.event-title-create {
+    color: var(--cor-principal);
+    border: none;
+    border-bottom: 4px solid var(--cor-principal);
+    width: 480px;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+}
+.event-title-create::placeholder {
+    color: var(--branco-opaco);
+}
+
+.event-title-create:focus {
+    outline: none;
+}
+
 .edit-btns {
     display: flex;
     gap: 16px;
+}
+
+.edit-btns-x {
+    display: flex;
+    gap: 16px;
+}
+
+.edit-btns-x img {
+    width: 16px;
+    height: 16px;
+}
+.edit-btns-x button {
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    align-items: center;
+    margin: 0;
+    padding: 12px;
+    background-color: var(--cor-principal);
+    border-radius: 100px;
+    box-sizing: border-box;
+    height: min-content;
+    cursor: pointer;
 }
 
 .edit-btns button {

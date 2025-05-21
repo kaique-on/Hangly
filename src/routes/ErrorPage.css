@@ -1,0 +1,25 @@
+.error-body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 32px;
+}
+
+.pagina-principal {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--branco-suave);
+    
+}
+
+.frase-erro{
+    text-align: center;
+    font-size: 24px;
+    width: 60%;
+}
+
+.login-body button {
+    cursor: pointer;
+}

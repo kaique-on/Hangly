@@ -8,6 +8,13 @@ import NoImg from '../assets/sem-fotos.svg'
 import './EventPage.css';
 
 const CreateEventPage = () => {
+
+  function autoGrow(element) {
+  element.style.height = "auto";
+  element.style.height = Math.max(200, element.scrollHeight) + "px";
+}
+
+
   return (
     <div className='create-body'>
         <NavBar pagina={'home'}/>
@@ -19,9 +26,9 @@ const CreateEventPage = () => {
                                 <button><img src={Fechar}/></button>
                             </div>
                         </div>
-        <div className='event-description'>
-            a
-        </div>
+        <textarea oninput="autoGrow(this)" rows="1" className='event-description-txt'>
+            
+        </textarea>
         </div>
     </div>
   )

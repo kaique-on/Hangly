@@ -50,10 +50,11 @@ ul {
     color: var(--cor-principal);
     border: none;
     border-bottom: 4px solid var(--cor-principal);
-    width: 480px;
+    width: 600px;
     background-color: transparent;
-    font-size: 32px;
+    font-size: 44px;
     font-weight: 700;
+    height: 52px;
 }
 .event-title-create::placeholder {
     color: var(--branco-opaco);
@@ -121,6 +122,23 @@ button:focus {
     font-size: 18px;
     padding: 0px 128px;
     width: 100%;
+}
+
+.event-description-txt {
+    background-color: transparent;
+    color: var(--branco-suave);
+    outline: none;
+    resize: none;
+    border: 2px solid var(--cor-principal);
+    margin: 0px 64px;
+    box-sizing: border-box;
+    width: 80%;
+    min-height: 200px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 700;
+    overflow: hidden;
+    
 }
 
 .endereco {

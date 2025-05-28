@@ -13,6 +13,8 @@ import HomePage from "./routes/HomePage.jsx";
 import EventPage from "./routes/EventPage.jsx";
 import ProfilePage from "./routes/ProfilePage.jsx";
 import CreateEventPage from './routes/CreateEventPage.jsx';
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import { UserProvider } from './contexts/UserContext.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,7 +43,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/event",
+    path: "/event/:id",
     element: <EventPage />,
   },
   {
@@ -57,6 +59,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
-  </StrictMode>,
-)
+    <AuthProvider>
+      <UserProvider>
+      <RouterProvider router={router} />
+      </UserProvider> 
+    </AuthProvider>
+  </StrictMode>
+);

@@ -18,7 +18,7 @@ const CadastroPage = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault(); // evita recarregar a página
 
     const { name, email, password, confirmPassword } = formData;
@@ -33,9 +33,32 @@ const CadastroPage = () => {
       alert('As senhas não coincidem!');
       return;
     }
+    try {
+      const response = await fetch('http://localhost:8081/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          password: password,
+          imgUrl: '', // pode ajustar caso queira adicionar futuramente
+        }),
+      });
 
-    navigate('/home');
+      if (response.ok) {
+        alert('Cadastro realizado com sucesso!');
+        navigate('/login');
+      } else {
+        const errorData = await response.text();
+        alert('Erro no cadastro: ' + errorData);
+      }
+    } catch (error) {
+      alert('Erro na requisição: ' + error.message);
+    }
   };
+
 
 
   return (

@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../components/NavBar';
-import Footer from '../components/Footer'
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 import Lupa from '../assets/lupa.svg';
 
 function HomePage() {
+  const [eventos, setEventos] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8081/event', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      }
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro na requisição');
+      }
+      return response.json();
+    })
+    .then(data => {
+      setEventos(data);
+    })
+    .catch(error => {
+      console.error('Erro ao buscar eventos:', error);
+    });
+  }, []);
+
   return (
     <div className='home-layout'>
       <NavBar pagina={'home'}/>
+
       <div className='home-body'>
         <div className="pesquisa">
           <input type="text" placeholder='Pesquisar eventos'/>
-          <img src={Lupa} />
+          <img src={Lupa} alt="Ícone de pesquisa"/>
         </div>
 
         <div className='categorias'>
@@ -28,31 +53,22 @@ function HomePage() {
         </div>
 
         <div className='eventos'>
-          <Link className='evento-card e-card1' to={'/event'}>
-            <div className='evento-faixa'>Rave Neon Night Alienz</div>
-          </Link>
-          <Link className='evento-card e-card2'>
-            <div className='evento-faixa'>Pré-estreia de Vingadores: Guerras Secretas </div>
-          </Link>
-          <Link className='evento-card e-card3'>
-            <div className='evento-faixa'>Show da banda Lupe De Lupe</div>
-          </Link>
-          <Link className='evento-card e-card4'>
-            <div className='evento-faixa'>Piquenique no Ibirapuera</div>
-          </Link>
-          <Link className='evento-card e-card5'>
-            <div className='evento-faixa'>Exposição do Van Gogh</div>
-          </Link>
-          <Link className='evento-card e-card6'>
-            <div className='evento-faixa'>Karaokê na Liba</div></Link>
+          {eventos.map(evento => (
+            <Link 
+              className='evento-card'
+              to={`/event/${evento.eventId}`}
+              key={evento.eventId}
+              style={{ backgroundImage: `url(${evento.imgUrl})` }}
+            >
+              <div className='evento-faixa'>{evento.name}</div>
+            </Link>
+          ))}
         </div>
-
-
       </div>
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

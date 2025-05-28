@@ -6,6 +6,12 @@
     width: 100vw;
 }
 
+.home-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
 .pesquisa {
     display: flex;
     padding: 0px 128px;
@@ -55,10 +61,11 @@
 .categorias {
     display: flex;
     padding: 24px 128px;
-    justify-content: space-between;
+    justify-content:left;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    row-gap: 8px;
+    gap: 8px;
 }
 
 .btn-categoria{
@@ -81,8 +88,10 @@
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 32px 128px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
     row-gap: 56px;
+    align-items: center;
 }
 
 .evento-card {

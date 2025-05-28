@@ -138,6 +138,11 @@ button:focus {
     font-size: 18px;
     font-weight: 700;
     overflow: hidden;
+    padding: 2px 4px;
+}
+
+.btn-verde {
+    background-color: var(--cor-verde);
     
 }
 
@@ -187,4 +192,94 @@ button:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
+}
+
+.endr-section {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.endr-section h3{
+    padding: 56px 0px 24px 0px;
+}
+
+.form-endereco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.input-endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.input-endereco input {
+    height: 36px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--cor-principal);
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 0px 4px;
+}
+
+.input-endereco select {
+    height: 36px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--cor-principal);
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 0px 4px;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+}
+
+option {
+color: black;
+}
+
+.cep {
+    width: 200px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cidade {
+
+}
+
+.estado {
+
+}
+
+.pais{
+
+}
+
+.bairro {
+
+}
+
+.rua {
+
+}
+
+.numero {
+
 }

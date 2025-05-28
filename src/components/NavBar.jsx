@@ -38,7 +38,7 @@ const NavBar = ({pagina}) => {
             <div className='home-pag' >
                 <Link className='create' to={"/create"}><img src={AddIcon} alt="" /><p>Criar</p></Link>
                 <Link className='profile' to={"/profile"}>
-                <p>Kaique</p>
+                <p>Mariana</p>
                     <img src={SemFoto} />
                 </Link>
                 {/* <img src={Configuracoes} /> */}

@@ -204,6 +204,11 @@ button:focus {
     padding: 56px 0px 24px 0px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-endereco {
     display: flex;
     flex-wrap: wrap;
@@ -282,4 +287,16 @@ input::-webkit-inner-spin-button {
 
 .numero {
 
+}
+
+.mapa {
+    width: 520px;
+    height: 280px;
+    background-color: aqua;
+    display: flex;
+    margin: 48px auto 0px auto;
+}
+
+.mapa-evento {
+    margin: 0px;
 }

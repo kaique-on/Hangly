@@ -1,33 +1,33 @@
 # Hangly – Front-End
 
 ![React.js](https://img.shields.io/badge/React.js-2023-blue.svg)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-in%20development-yellow.svg)
 
-> Plataforma digital para promover encontros presenciais entre pessoas com interesses em comum, incentivando conexões reais e o bem-estar social.
-
----
-
-## 📘 Sobre o Projeto
-
-O **Hangly** é um aplicativo web voltado para **reduzir o isolamento social** gerado pelas interações exclusivamente digitais. A proposta é criar uma plataforma segura e intuitiva para **conectar pessoas com afinidades** e promover **encontros presenciais**.
-
-Este repositório contém o **front-end do projeto**, desenvolvido com **React.js**, que se comunica com uma API back-end (Java + Spring Boot), utilizando PostgreSQL via Docker como banco de dados.
+> A digital platform designed to promote face-to-face meetings between people with shared interests, encouraging real connections and social well-being.
 
 ---
 
-## 🚀 Funcionalidades Implementadas
+## 📘 About the Project
 
-- 🔐 Login e cadastro com autenticação JWT
-- 📍 Integração com API de CEP e Google Maps
-- 🗓️ Criação e visualização de eventos com filtros por localização/interesse
-- 👤 Página de perfil com edição de dados e preferências
-- 📱 Layout responsivo para mobile e desktop
-- 📦 Integração com APIs RESTful
+**Hangly** is a web application focused on **reducing social isolation** caused by purely digital interactions. The goal is to create a safe and intuitive platform to **connect people with similar interests** and promote **in-person gatherings**.
+
+This repository contains the **front-end of the project**, developed with **React.js**, which communicates with a back-end API (Java + Spring Boot), using PostgreSQL via Docker as the database.
+
+To view the project's back-end repository, visit: https://github.com/valadao-davi/HanglyBackend
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🚀 Implemented Features
+
+- 🔐 Login and registration with JWT authentication
+- 📍 Integration with the Brazilian ZIP Code API (CEP) and Google Maps
+- 🗓️ Event creation and viewing with filters by location/interest
+- 👤 Profile page with personal data and preference editing
+- 📦 Integration with RESTful APIs
+
+---
+
+## 🛠️ Technologies Used
 
 - [React.js](https://reactjs.org/)
 - [Axios](https://axios-http.com/)
@@ -38,100 +38,84 @@ Este repositório contém o **front-end do projeto**, desenvolvido com **React.j
 
 ---
 
-## 📁 Estrutura de Diretórios
+## 📁 Project Structure
 
 ```
 src/
-├── assets/         # Imagens e ícones
-├── components/     # Componentes reutilizáveis
-├── pages/          # Telas principais (Login, Home, Perfil, etc.)
-├── services/       # Configuração de Axios
-├── routes/         # Arquivo de rotas da aplicação
-├── utils/          # Funções auxiliares
-└── App.jsx         # Componente principal
+├── assets/              # Images and icons
+├── components/          # Reusable UI components
+├── contexts/            # Context API (authentication and user)
+├── routes/              # Application pages (views)
+├── App.jsx              # Main React component
+├── App.css              # Global application styles
+├── index.js             # React application entry point
+└── main.jsx             # DOM rendering entry point
 ```
 
 ---
 
-## ⚙️ Como Rodar o Projeto
+## ⚙️ How to Run the Project
 
-### ✅ Pré-requisitos
+### ✅ Prerequisites
 
 - Node.js v18+
-- Yarn ou npm
+- Yarn or npm
 
-### ▶️ Instalação
+### ▶️ Installation
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/hangly-frontend.git
+# Clone the repository
+git clone https://github.com/your-username/hangly-frontend.git
 cd hangly-frontend
 
-# Instale as dependências
+# Install dependencies
 npm install
 
-# Execute o projeto
+# Run the application
 npm run dev
 ```
 
-> ⚠️ Certifique-se de que o back-end esteja rodando corretamente e o `.env` esteja configurado.
+> ⚠️ Make sure the back-end is running and the `.env` file is properly configured.
 
 ---
 
-## 📄 Exemplo de `.env`
+## 📄 Example `.env` File
 
 ```env
 VITE_API_BASE_URL=http://localhost:8080/api
-VITE_GOOGLE_MAPS_API_KEY=sua_api_key
+VITE_GOOGLE_MAPS_API_KEY=your_api_key
 ```
 
 ---
 
-## 📊 Resultados Alcançados
+## 🧩 Next Steps
 
-- Interfaces funcionais: login, cadastro, home, perfil e criação de eventos
-- Integração com backend via Axios
-- Filtros e paginação de eventos
-- Validação e feedback para formulários
-- Experiência de uso adaptada para mobile
-
----
-
-## 🧩 Próximos Passos
-
-- 💬 Chat e mensagens entre usuários
-- 🖼️ Upload de imagens para perfis/eventos
-- 🌙 Modo escuro
-- ✅ Testes com Jest e Cypress
-- 🔐 Segurança aprimorada
+- 💬 User chat and messaging
+- 🖼️ Image upload for profiles/events
+- 🌙 Dark mode support
+- ✅ Unit and e2e testing with Jest and Cypress
+- 🔐 Enhanced security features
+- Improved mobile experience
 
 ---
 
-## 🔐 Segurança
+## 🔐 Security
 
-- Tokens armazenados com segurança
-- Rotas protegidas por autenticação
-- Validações de entrada no front e back-end
+- Secure token storage
+- Route protection via authentication
+- Front-end and back-end input validations
 
 ---
 
-## 👥 Contribuidores
+## 👥 Contributors
 
+- Davi Silva Valadão  
 - Kaique Nascimento de Oliveira  
-*(adicione aqui mais nomes, se houver)*
 
 ---
 
-## 📜 Licença
+## 📎 Additional Resources
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais informações.
-
----
-
-## 📎 Recursos Complementares
-
-- 📘 [Definition of Done (PDF)](https://drive.google.com/file/d/1W-6WSrotUA5AyFWm7u6HjiTsOh2Ct7Ro/view?usp=sharing)
-- 🎥 [Demonstração de Testes (vídeo)](https://drive.google.com/file/d/14pFvYVh1jMKuGNQ4R5LeIcosocTpcW5C/view?usp=sharing)
+- 📘 [Definition of Done (PDF)](https://drive.google.com/file/d/1W-6WSrotUA5AyFWm7u6HjiTsOh2Ct7Ro/view?usp=sharing)  
+- 🎥 [Test Demonstration (Video)](https://drive.google.com/file/d/14pFvYVh1jMKuGNQ4R5LeIcosocTpcW5C/view?usp=sharing)
 ```
-
----

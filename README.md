@@ -1,6 +1,6 @@
 # Hangly – Front-End
 
-![React.js](https://img.shields.io/badge/React.js-2023-blue.svg)
+![React.js](https://img.shields.io/badge/React.js-2025-blue.svg)
 ![Status](https://img.shields.io/badge/status-in%20development-yellow.svg)
 
 > A digital platform designed to promote face-to-face meetings between people with shared interests, encouraging real connections and social well-being.
@@ -118,4 +118,3 @@ VITE_GOOGLE_MAPS_API_KEY=your_api_key
 
 - 📘 [Definition of Done (PDF)](https://drive.google.com/file/d/1W-6WSrotUA5AyFWm7u6HjiTsOh2Ct7Ro/view?usp=sharing)  
 - 🎥 [Test Demonstration (Video)](https://drive.google.com/file/d/14pFvYVh1jMKuGNQ4R5LeIcosocTpcW5C/view?usp=sharing)
-```
